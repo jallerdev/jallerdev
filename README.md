@@ -1,23 +1,60 @@
-###
+## Luis G. Jaller
 
-<h1 align="center">Welcome to my GitHub profile!👋</h1>
+**Platform / Cloud Engineer** · Cartagena, Colombia
 
-###
+I build and operate production infrastructure on AWS, defined as code. Three and a half
+years across cloud platform work, backend services, and the pipelines that ship them.
 
-# 💫 About Me:
-<br>I'm Luis, and i'm from Colombia<br><br>🔭 I’m currently learning TypeScript and Docker.<br><br>❓ Ask me about anything related to API RESTful and related technologies.<br><br>- ⚡ In my free time I like to sing and play bass.
+Currently full stack engineer at **[InvitiApp](https://invitiapp.com)** — Next.js on AWS
+Lambda, S3 and CloudFront.
 
+---
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/jallerangel) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/JallerDev) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/JallerDev) 
+### What I actually do
 
-# 💻 Tech Stack:
-![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=flat-square&logo=kubernetes&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat-square&logo=typescript&logoColor=white) ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=flat-square&logo=terraform&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=flat-square&logo=jira&logoColor=white) ![Confluence](https://img.shields.io/badge/confluence-%23172BF4.svg?style=flat-square&logo=confluence&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=flat-square&logo=mysql&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat-square&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&logo=mongodb&logoColor=white) ![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=flat-square&logo=jenkins&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-black?style=flat-square&logo=JSON%20web%20tokens) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=flat-square&logo=express&logoColor=%2361DAFB) ![Apollo-GraphQL](https://img.shields.io/badge/-ApolloGraphQL-311C87?style=flat-square&logo=apollo-graphql) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white) ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=flat-square&logo=nestjs&logoColor=white)
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-###
+**Infrastructure as code.** Built a Terraform codebase from zero: 8 modules — `vpc`,
+`rds`, `ecs`, `ecr`, `alb`, `ec2`, `secretmanager`, `frontend` — declaring **45 AWS
+resource types** across three environments, driven by per-environment `tfvars`.
 
-<div align="center">
-  <img height="200" src="https://i.gifer.com/UXdv.gif"  />
-</div>
+**CI/CD.** **5 GitHub Actions pipelines** covering infrastructure plan/apply, API and
+frontend, with deploy-time secrets read from AWS Secrets Manager and scoped per
+environment. Also Jenkins and Octopus Deploy.
 
-###
+**Cost decisions with the invoice open.** Chose ECS on Fargate over EKS after breaking
+the bill down component by component: the control plane alone cost more than the rest of
+the project's infrastructure.
+
+**Observability as code.** New Relic alert policies declared in Terraform and routed to a
+Teams channel. CloudWatch for logs and metrics. IAM roles scoped per service and per
+environment.
+
+---
+
+### Stack
+
+| | |
+|---|---|
+| **AWS** | EC2 · ECS/Fargate · Lambda · Step Functions · API Gateway · S3 · VPC · RDS · DynamoDB · SQS · EventBridge · CloudWatch · IAM · Secrets Manager |
+| **IaC & delivery** | Terraform · Docker · Kubernetes · Helm · GitHub Actions · Jenkins · Octopus Deploy · Nginx · Linux |
+| **Backend** | TypeScript · Node.js · NestJS · Hono · PostgreSQL (Drizzle, Row Level Security) · Redis |
+| **Frontend** | Next.js 15 · React 19 · Tailwind CSS |
+
+---
+
+### Built on my own
+
+**[Hummik](https://hummik.com)** — WhatsApp scheduling for businesses in Colombia. pnpm
+monorepo, ports and adapters with an I/O-free core. Real multi-tenancy: tenant resolved
+from a verified JWT claim plus Postgres Row Level Security. Serverless on AWS with SST v3
+— Hono on Lambda, SQS with dead-letter queues, crons. **841 tests**, most of them over
+pure logic.
+
+**[HalcónOS](https://halcon.jvagencia.com)** — CRM with lead discovery over the Google
+Places API. Next.js 15, tRPC, Drizzle, multi-tenant with organization-scoped RBAC
+enforced at the tRPC layer. Separate Python + Playwright scraping service.
+
+---
+
+### Reach me
+
+**[Portfolio](https://jaller-dev.vercel.app)** · **[LinkedIn](https://linkedin.com/in/jallerdev)** · jallerangel06@gmail.com
