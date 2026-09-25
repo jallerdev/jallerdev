@@ -1,9 +1,9 @@
-<img src="assets/banner.png" alt="Luis G. Jaller — Platform & Cloud Engineer" width="100%">
+<img src="assets/banner.png" alt="Luis G. Jaller — Backend & DevOps Engineer" width="100%">
 
-**Platform / Cloud Engineer** · Colombia · available on-site, hybrid or remote
+**Backend & DevOps Engineer** · Colombia · available on-site, hybrid or remote
 
 I build and operate production infrastructure on AWS, defined as code. Three and a half
-years across cloud platform work, backend services, and the pipelines that ship them.
+years across AWS infrastructure, backend services, and the pipelines that ship them.
 
 Currently full stack engineer at **[InvitiApp](https://invitiapp.com)** — Next.js on AWS
 Lambda, S3 and CloudFront.
